@@ -141,3 +141,28 @@ a:hover{
 a{
     color: #1C1C1C;
 }
+
+.barFix{
+    overflow: hidden;
+    position: fixed;
+}
+
+.img{
+    width: 100px;
+    left: 1090px;
+    top: 40px;
+}
+
+.zoom {
+    padding: 50px;
+    transition: transform .5s;
+    width: 190px;
+    height: 190px;
+    margin: 0 auto;
+  }
+  
+  .zoom:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); 
+  }
