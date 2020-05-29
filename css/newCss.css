@@ -126,7 +126,7 @@
 }
 
 .underline--magical {
-    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    background-image: linear-gradient(120deg, #654EA3 0%, #EAAFC8 100%);
     background-repeat: no-repeat;
     background-size: 100% 0em;
     background-position: 0 88%;
@@ -136,6 +136,7 @@
 a:hover{
     background-size: 100% 88%;
     text-decoration: none;
+    color: #F25CAF;
 }
 
 a{
@@ -161,7 +162,7 @@ a{
     margin: 0 auto;
   }
   
-  .zoom:hover {
+.zoom:hover {
     -ms-transform: scale(1.5); /* IE 9 */
     -webkit-transform: scale(1.5); /* Safari 3-8 */
     transform: scale(1.5); 
