@@ -1,0 +1,127 @@
+.hero{
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    
+    position: absolute;
+    width: 791px;
+    height: 256px;
+    left: calc(50% - 791px/2 + 0.5px);
+    top: 32px;
+}
+
+.heroH1{
+    position: static;
+    width: 791px;
+    height: 226px;
+    left: 0px;
+    top: 30px;
+    
+    /* H1 */
+     
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 96px;
+    line-height: 113px;
+    text-align: center;
+    letter-spacing: -1.5px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+        
+    /* Accents 1 */
+        
+    color: #4E0C6E;
+     
+    /* Inside Auto Layout */
+        
+    flex: none;
+}
+
+.bodyBig{
+    position: static;
+    width: 210px;
+    height: 30px;
+    left: 291.5px;
+    top: 0px;
+
+    /* Body big */
+
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height, or 150% */
+
+    letter-spacing: 0.15px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+
+    /* Accents 1 */
+
+    color: #4E0C6E;
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 0;
+    align-self: center;
+    margin: 0px 0px;
+}
+
+.heroExp{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    
+    position: absolute;
+    width: 494px;
+    height: 275px;
+    left: 164px;
+    top: 365px;
+    
+}
+
+.heroAbout{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    
+    position: absolute;
+    width: 494px;
+    height: 275px;
+    left: 782px;
+    top: 365px;
+    
+}
+
+
+.h1New{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 96px;
+    line-height: 113px;
+    /* identical to box height */
+
+    text-align: center;
+    letter-spacing: -1.5px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+
+    /* Tipo Black */
+
+    color: #1C1C1C;
+}
+
+.h4New{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 44px;
+    letter-spacing: 0.25px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    
+    /* Tipo Black */
+    
+    color: #1C1C1C;
+}
