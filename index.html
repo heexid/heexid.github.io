@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    
-
     <!-- call bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <script src="js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 
     <!-- newCss -->
     <link href="css/newCss.css" rel="stylesheet">
@@ -14,30 +13,32 @@
     <link rel="icon" href="/assets/favicon.png">
 
     <!-- title -->
-    <title>hexid | Luqman Haries portfolio web</title>
+    <title>hexid | Luqman Haries</title>
+
+    <!-- Animate.style-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
 </head>
 
-<body>
+<body id="body" class="pattrent white">
 
-    <!-- Navbar -->
-    <nav class="navbar fixed-top navbar-light justify-content-end">
-        <a class="navbar-brand " href="#"><img src="/assets/favicon.png" class="zoom d-inline-block align-top" alt="favicon"></a>
-    </nav>
-
+    <!-- Section 1-->
     <!-- Hero -->
-    <div class="container hero">
-        <p class="bodyBig">hexid | Luqman Haries</p>
-        <h1 class="heroH1">Welcome to my<br>
-            portfolio website
-        </h1>
-       <div class="row">
-            <div class="col h1New"><a class ="underline--magical" href="">exp</a></div>
-            <div class="col h1New"><a class ="underline--magical" href="">about</a></div>
-            <div class="w-100"></div>
-            <div class="col h4New">all the experience I got from the organization, campus and work experience</div>
-            <div class="col h4New">stories about my adventures, from birth to now</div>
-        </div>
+    <div id="shape" class="shapeTransform-forward">
     </div>
-    
+
+    <div class="d-flex hero accentColor1 animate__animated animate__fadeOut animate__delay-2s">
+        <p class="bodyBig bodyBigHero">hexid | Luqman Haries</p>
+        <h1 class="h1">Welcome to my<br>portfolio website
+        </h1>
+    </div>
+
+    <script>
+        setTimeout(() => $('#shape').addClass("shapeTransform-backward"), 3000);
+        setTimeout(() => $("#body").removeClass("pattrent"), 3000);
+    </script>
+
+
+    <!-- Section 2 -->
+
 </body>
 </html>

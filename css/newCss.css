@@ -4,6 +4,36 @@
     }
   }
 
+/* Font */  
+.h1{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 96px;
+    line-height: 113px;
+    text-align: center;
+    letter-spacing: -1.5px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+
+}
+
+.bodyBig{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+
+/* Auto layout */ 
+.bodyBigHero{
+    flex: none;
+    order: 0;
+    align-self: center;
+    margin: 0px 0px;
+}
+
 .hero{
     display: flex;
     flex-direction: column;
@@ -13,154 +43,78 @@
     width: 791px;
     height: 256px;
     left: calc(50% - 791px/2 + 0.5px);
-    top: 32px;
+    top: calc(50% - 256px/2 - 0.5px);
 }
 
-.heroH1{
-    position: static;
-    width: 791px;
-    height: 226px;
-    left: 0px;
-    top: 30px;
-    
-    /* H1 */
-    font-family: Raleway;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 96px;
-    line-height: 113px;
-    text-align: center;
-    letter-spacing: -1.5px;
-    font-feature-settings: 'pnum' on, 'lnum' on;
-        
-    /* Accents 1 */
-        
+/* Color */
+.accentColor1{
     color: #4E0C6E;
-     
-    /* Inside Auto Layout */
-        
-    flex: none;
 }
 
-.bodyBig{
-    position: static;
-    width: 210px;
-    height: 30px;
-    left: 291.5px;
-    top: 0px;
-
-    /* Body big */
-
-    font-family: Raleway;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 30px;
-    /* identical to box height, or 150% */
-
-    letter-spacing: 0.15px;
-    font-feature-settings: 'pnum' on, 'lnum' on;
-
-    /* Accents 1 */
-
-    color: #4E0C6E;
-
-    /* Inside Auto Layout */
-
-    flex: none;
-    order: 0;
-    align-self: center;
-    margin: 0px 0px;
+.white{
+    background-color: #F6FDFF;
+    color:"F6FDFF";
 }
 
-.heroExp{
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    
+/* Shape */
+.shapeTransform-forward{
+    background-image: url('/assets/shapeTransform.svg');
+
     position: absolute;
-    width: 494px;
-    height: 275px;
-    left: 164px;
-    top: 365px;
-    
+    width: 455px;
+    height: 357px;
+    left: calc(50% - 455px/2 + 170.5px);
+    top: calc(50% - 357px/2 - 178px);
+
+    animation: transition-delay-forward 3000ms forwards;
+    animation-delay: 1.5s;
 }
 
-.heroAbout{
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    
+.shapeTransform-backward{
+    background-image: url('/assets/shapeTransform.svg');
+
     position: absolute;
-    width: 494px;
-    height: 275px;
-    left: 782px;
-    top: 365px;
-    
+    width: 455px;
+    height: 357px;
+    left: calc(50% - 455px/2 + 170.5px);
+    top: calc(50% - 357px/2 - 178px);
+
+    animation: transition-delay-backward 3000ms forwards;
+    animation-delay: 0s;
 }
 
-.roww{
+
+.pattrent{
+    background-image: url('/assets/waihoPattren.svg');
+    background-repeat: repeat;
+    width: 100%;
     height: 100%;
 }
 
-.h1New{
-    font-family: Raleway;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 96px;
-    line-height: 113px;
-    /* identical to box height */
+/* Transition*/
 
-    text-align: center;
-    letter-spacing: -1.5px;
-    font-feature-settings: 'pnum' on, 'lnum' on;
-
-    /* Tipo Black */
-
-    color: #1C1C1C;
+@keyframes transition-delay-forward{
+    from {
+        width: 455px;
+        height: 357px;
+        position: absolute;
+    }
+    to {
+        transform:scale(10,10);
+        position:fixed;
+    }
 }
 
-.h4New{
-    font-family: Raleway;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 34px;
-    line-height: 44px;
-    letter-spacing: 0.25px;
-    font-feature-settings: 'pnum' on, 'lnum' on;
-    
-    /* Tipo Black */
-    
-    color: #1C1C1C;
-}
-
-.underline--magical {
-    background-image: linear-gradient(120deg, #654EA3 0%, #EAAFC8 100%);
-    background-repeat: no-repeat;
-    background-size: 100% 0em;
-    background-position: 0 88%;
-    transition: background-size 0.25s ease-in;
-}
-
-a:hover{
-    background-size: 100% 88%;
-    text-decoration: none;
-    color: #F25CAF;
-}
-
-a{
-    color: #1C1C1C;
-}
-
-.zoom {
-    padding: 50px;
-    transition: transform .5s;
-    width: 190px;
-    margin: 0 auto;
-  }
-  
-.zoom:hover {
-    -ms-transform: scale(1.5); /* IE 9 */
-    -webkit-transform: scale(1.5); /* Safari 3-8 */
-    transform: scale(1.5); 
+@keyframes transition-delay-backward{
+    from {
+        transform:scale(10,10);
+        position:fixed;
+    }
+    to {
+        position: fixed;
+        left: 91.81%;
+        right: -28.96%;
+        top: 85.49%;
+        bottom: -45.23%;
+    }
 }
