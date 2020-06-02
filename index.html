@@ -26,19 +26,48 @@
     <div id="shape" class="shapeTransform-forward">
     </div>
 
-    <div class="d-flex hero accentColor1 animate__animated animate__fadeOut animate__delay-2s">
+    <div id="section1" class="d-flex hero accentColor1 animate__animated animate__fadeOut animate__delay-2s">
         <p class="bodyBig bodyBigHero">hexid | Luqman Haries</p>
         <h1 class="h1">Welcome to my<br>portfolio website
         </h1>
     </div>
 
+    <!-- Section 2 -->
+    <ul class="nav justify-content-end animate__animated animate__fadeIn animate__delay-3s" id="navbar">
+        <li class="nav-item">
+          <a class="nav-link active" href="#"><img src="/assets/favicon.png" class="navIconFixed"></a>
+        </li>
+    </ul>
+
+    <div id="section2" class="tipoBlack section2 animate__animated animate__fadeIn animate__delay-2s">
+        <div class="frameExp">
+            <div id="underline">
+                <div class="underlineAnimate">
+                    <h1 class="h1 hover hover-3">exp</h1>
+                </div>
+            </div>
+            <h4 class="h4 frameCaption">all the experience I got from the organization, campus and work experience</h4>
+        </div>
+
+        <div class="frameAbout">
+            <div id="underline">
+                <div class="underlineAnimate">
+                    <h1 class="h1 hover hover-3">about</h1>
+                </div>
+            </div>
+            <h4 class="h4 frameCaption">stories about my adventures, from birth to now</h4>
+        </div>
+    </div>
+    
     <script>
         setTimeout(() => $('#shape').addClass("shapeTransform-backward"), 3000);
         setTimeout(() => $("#body").removeClass("pattrent"), 3000);
+        setTimeout(() => $("#section1").remove(), 3000);
+        
+        $('#section2').hide();
+        $('#navbar').hide();
+        setTimeout(() => $("#section2").show(), 3000);
+        setTimeout(() => $("#navbar").show(), 3000);
     </script>
-
-
-    <!-- Section 2 -->
-
 </body>
 </html>
