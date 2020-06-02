@@ -2,7 +2,9 @@
     .h1New{
       width:100%; /* The width is 100%, when the viewport is 800px or smaller */
     }
-  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 .navIconFixed{
     width:148px;
