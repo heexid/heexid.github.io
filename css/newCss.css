@@ -129,10 +129,10 @@
     background-image: url('/assets/shapeTransform.svg');
 
     position: absolute;
-    width: 455px;
-    height: 357px;
-    left: calc(50% - 455px/2 + 170.5px);
-    top: calc(50% - 357px/2 - 178px);
+    width: 213px;
+    height: 174px;
+    left: calc(50% - 213px/2 + 268.5px);
+    top: calc(50% - 174px/2 - 142.5px);
 
     animation: transition-delay-forward 3000ms forwards;
     animation-delay: 1.5s;
@@ -142,10 +142,10 @@
     background-image: url('/assets/shapeTransform.svg');
 
     position: absolute;
-    width: 455px;
-    height: 357px;
-    left: calc(50% - 455px/2 + 170.5px);
-    top: calc(50% - 357px/2 - 178px);
+    width: 213px;
+    height: 174px;
+    left: calc(50% - 213px/2 + 268.5px);
+    top: calc(50% - 174px/2 - 142.5px);
 
     animation: transition-delay-backward 3000ms forwards;
     animation-delay: 0s;
@@ -162,27 +162,27 @@
 
 @keyframes transition-delay-forward{
     from {
-        width: 455px;
-        height: 357px;
+        width: 213px;
+        height: 174px;
         position: absolute;
     }
     to {
-        transform:scale(10,10);
+        transform:scale(20,20);
         position:fixed;
     }
 }
 
 @keyframes transition-delay-backward{
     from {
-        transform:scale(10,10);
+        transform:scale(15,15);
         position:fixed;
     }
     to {
         position: fixed;
-        left: 109.86%;
-        right: -47.01%;
-        top: 89.05%;
-        bottom: -48.79%;
+        left: 104.44%;
+        right: -41.6%;
+        top: 91.89%;
+        bottom: -51.64%;
     }
 }
 
