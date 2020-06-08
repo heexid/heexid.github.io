@@ -11,7 +11,9 @@
     margin: 20px;
 }
 
-
+a:hover{
+    color: #3C5BFF;
+}
 
 /* Font */  
 .h1{
@@ -33,6 +35,15 @@
     font-size: 34px;
     line-height: 44px;
     letter-spacing: 0.25px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+.h5{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
     font-feature-settings: 'pnum' on, 'lnum' on;
 }
 
@@ -106,6 +117,15 @@
 
 }
 
+.frameCloseModal{
+    position: absolute;
+
+    width: 198px;
+    height: 198px;
+    top: 40px;
+    left: 80%;
+}
+
 /* Color */
 .accentColor1{
     color: #4E0C6E;
@@ -118,6 +138,10 @@
 .white{
     background-color: #F6FDFF;
     color:"F6FDFF";
+}
+
+.tipoWhite{
+    color: #F6FDFF;
 }
 
 .accentColor2{
@@ -227,4 +251,53 @@
 }
 #underline .underlineAnimate:hover .hover.hover-3:before, #underline .underlineAnimate:hover .hover.hover-4:before, #underline .underlineAnimate:hover .hover.hover-3:after, #underline .underlineAnimate:hover .hover.hover-4:after {
     width: 50%;
+}
+
+/* zoom hover */
+
+.zoom {
+    transition: transform .5s;
+    margin: 0 auto;
+  }
+  
+  .zoom:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); 
+  }
+
+
+/* Modal Fullscreen */
+
+.buttonModalShow{
+    border: none;
+    background: none;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+.modal-dialog-full-width {
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    max-width:none !important;
+
+}
+
+.modal-content-full-width  {
+    height: auto !important;
+    min-height: 100% !important;
+    border-radius: 0 !important;
+    background-color: #9278DA !important;
+    background-image: url(/assets/modalBg.svg);
+}
+
+.modal-header-full-width  {
+    border-bottom: none !important;
+}
+
+.modal-footer-full-width  {
+    border-top: none !important;
 }

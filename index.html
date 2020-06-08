@@ -4,7 +4,10 @@
     <!-- call bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <script src="js/bootstrap.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+   
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
     <!-- newCss -->
     <link href="css/newCss.css" rel="stylesheet">
@@ -35,7 +38,7 @@
     <!-- Section 2 -->
     <ul class="nav justify-content-end animate__animated animate__fadeIn animate__delay-3s" id="navbar">
         <li class="nav-item">
-          <a class="nav-link active" href="#"><img src="/assets/favicon.png" class="navIconFixed"></a>
+          <button class="buttonModalShow zoom" id="modalActivate" type="button" data-toggle="modal" data-target="#modalPrew"><img src="/assets/favicon.png" class="navIconFixed"></button>
         </li>
     </ul>
 
@@ -58,6 +61,27 @@
             <h4 class="h4 frameCaption">stories about my adventures, from birth to now</h4>
         </div>
     </div>
+
+    <!-- Modal -->
+    <div class="modal animate__animated animate__fadeIn" id="modalPrew" tabindex="-1" role="dialog" aria-labelledby="exampleModalPreviewLabel" aria-hidden="true">
+        <div class="modal-dialog-full-width modal-dialog momodel modal-fluid" role="document">
+          <div class="modal-content-full-width modal-content ">
+            <div class=" modal-header-full-width" style="margin: 47px;">
+                <h1 class="h1 accentColor2" id="haloLang" style="text-align: left;">Halo!</h1> <!-- tag random php -->
+                <h5 class="h5 accentColor2" id="haloDetail">indonesia language for “hello”</h1> <!-- tag random php -->
+                <div class="frameCloseModal zoom">    
+                    <button type="button" class="close " data-dismiss="modal" aria-label="Close">
+                        <img src="/assets/closeModal.svg" class="">
+                    </button>
+                </div>
+            </div>
+            <div class="modal-body" style="margin-left:164px ;">
+                <a href="#"><h1 class="h1 tipoWhite" id="expF" style="text-align: left;">exp</h1></a>
+                <a href="#"><h1 class="h1 tipoWhite" id="aboutF" style="text-align: left;">about</h1></a>
+            </div>
+          </div>
+        </div>
+      </div>
     
     <script>
         setTimeout(() => $('#shape').addClass("shapeTransform-backward"), 3000);
