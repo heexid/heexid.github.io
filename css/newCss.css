@@ -6,9 +6,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
+
 .navIconFixed{
     width:148px;
     margin: 20px;
+}
+
+.card{
+    background-color: transparent;
+    border: none;
 }
 
 a:hover{
@@ -20,7 +26,44 @@ a:hover{
     color: #1C1C1C;
 }
 
-/* Font */  
+/* Button */
+.btn-primary{
+    background-color: #4E0C6E;
+    color: #F6FDFF;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: justify;
+    letter-spacing: 0.75px;
+    text-transform: uppercase;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    display: flex;
+    flex-direction: row;
+    padding: 16px 32px;
+    width: 200px;
+    height: 48px;
+    left: 0px;
+    top: 252px;
+    border: none;
+}
+
+.btn-primary:hover{
+    background: #9278DA;
+}
+
+/* Font */
+.bigH1{
+    position: absolute;
+    top: 124px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 388px;
+    line-height: 456px;
+    
+} 
 .h1{
     font-family: Raleway;
     font-style: normal;
@@ -31,6 +74,15 @@ a:hover{
     letter-spacing: -1.5px;
     font-feature-settings: 'pnum' on, 'lnum' on;
 
+}
+
+.h3{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 56px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
 }
 
 .h4{
@@ -58,6 +110,17 @@ a:hover{
     font-weight: normal;
     font-size: 20px;
     line-height: 30px;
+}
+
+.overline{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 16px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-feature-settings: 'pnum' on, 'lnum' on;
 }
 
 
@@ -131,9 +194,30 @@ a:hover{
     left: 80%;
 }
 
+.exptitle{
+    position: absolute;
+    top: 917px;
+}
+
+.contentExp{
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+
+    position: absolute;
+    width: 1106px;
+    height: 2272px;
+    left: 50px;
+    top: 1110px;
+}
+
 /* Color */
 .accentColor1{
     color: #4E0C6E;
+}
+
+.accentColor3{
+    color: #9278DA;
 }
 
 .tipoBlack{
