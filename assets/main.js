@@ -13,7 +13,6 @@ function changeHeloModal(i){
     document.getElementById("lang").innerHTML = `${arrayOfHelloLang[i]} language for “hello”`;
 }
 
-
 //main
 const i = randomInt(arrayOfHello.length,0);
 changeHeloModal(i);
