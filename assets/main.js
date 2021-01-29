@@ -16,3 +16,15 @@ function changeHeloModal(i){
 //main
 const i = randomInt(arrayOfHello.length,0);
 changeHeloModal(i);
+
+//change color on section get in touch
+var touchColor = "#1C1C1C"
+var normalColor= "#FFFFFF"
+$(window).on("scroll touchmove", function(){
+    if ( $(document).scrollTop() >= $("#touchColor").position().top) {
+        $('body').css('background',$("#touchColor").attr("data-color"))
+    }else{
+        $('body').css('background',$("#normalColor").attr("data-color"))
+    }
+})
+
