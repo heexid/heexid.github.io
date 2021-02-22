@@ -23,6 +23,7 @@ function createPaths() {
 	var radiusDelta = blobs.maxRadius - blobs.minRadius;
 	var pointsDelta = blobs.maxPoints - blobs.minPoints;
 	for (var i = 0; i < blobs.paths; i++) {
+
 		//radius blobs
 		var radius = blobs.minRadius + Math.random() * radiusDelta;
 		
@@ -52,6 +53,7 @@ function createBlob(center, maxRadius, points) {
 	return path;
 }
 
+/* Editor path
 var segment, path;
 var movePath = false;
 function onMouseDown(event) {
@@ -96,3 +98,4 @@ function onMouseDrag(event) {
 		path.position += event.delta;
 	}
 }
+*/
