@@ -123,6 +123,7 @@ h5 {
   font-weight: 600;
   font-size: 14px;
   line-height: 16px;
+  user-select: none;
   text-transform: uppercase;
   letter-spacing: 0.75px;
 }
@@ -533,6 +534,11 @@ canvas[resize] {
   position: absolute;
   z-index: -1;
   /*mix-blend-mode: darken;*/
+}
+
+/* no selected item */
+.noneSelected {
+  user-select: none;
 }
 
 /*Compile SCSS 
