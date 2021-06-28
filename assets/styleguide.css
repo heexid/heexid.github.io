@@ -541,6 +541,14 @@ canvas[resize] {
   user-select: none;
 }
 
+.gray-hover {
+  filter: grayscale(100%);
+  transition: 0.3s;
+}
+.gray-hover:hover {
+  filter: grayscale(0%);
+}
+
 /*Compile SCSS 
 sass assets/style.scss assets/styleguide.css
 */
